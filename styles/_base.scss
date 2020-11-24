@@ -11,6 +11,7 @@ body {
         position: relative;
         background: #515151;
         overflow: hidden;
+
         &:before {
             content: ' ';
             display: block;
@@ -21,7 +22,7 @@ body {
             height: 100%;
             z-index: 1;
             opacity: 0.2;
-            background-image: url('../img/background-main.jpg');
+            background-image: url('./img/background-main.jpg');
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -58,26 +59,29 @@ body {
     transform: translate(-50%, -50%);
     width: 80%;
     background-color: #fff;
-    -webkit-box-shadow: 6px 6px 20px 0px rgba(0,0,0,0.05); 
-box-shadow: 6px 6px 20px 0px rgba(0,0,0,0.05);
-display: flex;
-padding: 4rem;
-&__data {
-    margin: 0 4rem;
-    min-width: 320px;
-    &-list {
-        list-style: none;
+    -webkit-box-shadow: 6px 6px 20px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: 6px 6px 20px 0px rgba(0, 0, 0, 0.05);
+    display: flex;
+    padding: 4rem;
+
+    &__data {
+        margin: 0 4rem;
+        min-width: 320px;
+
+        &-list {
+            list-style: none;
+        }
     }
-}
-&__avatar {
-    height: 10rem;
-    min-width: 10rem;
-    border-radius: 50%;
-    background-image: url('../img/avatar.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
+
+    &__avatar {
+        height: 10rem;
+        min-width: 10rem;
+        border-radius: 50%;
+        background-image: url('./img/avatar.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
 
     &-title {
         padding: 2rem 10rem;
@@ -90,6 +94,7 @@ padding: 4rem;
         }
     }
 }
+
 .section-white-space {
     flex: 1;
 }
