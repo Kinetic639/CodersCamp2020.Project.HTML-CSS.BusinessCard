@@ -158,16 +158,30 @@ body {
   text-align: center;
 }
 
+.section-card {
+  font-size: 1.6rem;
+  line-height: 1.7;
+}
+
+.section-card__data-list {
+  font-weight: 600;
+}
+
+.section-card__data-list span {
+  color: #FFC53D;
+}
+
 body {
   background-color: #ffffff;
 }
 
 .section {
   padding: 7rem 0;
-  min-height: 50vh;
+  margin-bottom: 4rem;
 }
 
 .section__home {
+  min-height: 50vh;
   position: relative;
   background: #515151;
   overflow: hidden;
@@ -203,6 +217,69 @@ body {
   margin-bottom: 4rem;
 }
 
+.section__about {
+  padding: 0;
+  min-height: 350px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 80%;
+  background-color: #fff;
+  -webkit-box-shadow: 6px 6px 20px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 6px 6px 20px 0px rgba(0, 0, 0, 0.05);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 4rem;
+}
+
+.section-card__data {
+  margin: 0 4rem;
+  min-width: 320px;
+}
+
+.section-card__data-list {
+  list-style: none;
+}
+
+.section-card__avatar {
+  height: 10rem;
+  min-width: 10rem;
+  border-radius: 50%;
+  background-image: url("../img/avatar.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.section-card-title {
+  padding: 2rem 10rem;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  background: #FAFAFF;
+}
+
+.section-card-title h3 {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+.section-white-space {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
 .social-icons {
   position: relative;
   z-index: 2;
@@ -213,7 +290,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 4rem;
+  font-size: 3rem;
   color: #FFC53D;
 }
 
@@ -222,7 +299,7 @@ body {
 }
 
 .social-icons__item:not(:last-child) {
-  margin-right: 2rem;
+  margin-right: 4rem;
 }
 
 .nav-bar {

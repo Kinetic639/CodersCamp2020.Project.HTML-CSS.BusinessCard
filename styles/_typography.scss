@@ -32,3 +32,18 @@ body {
     }
   }
 }
+
+
+
+.section-card {
+  font-size: 1.6rem;
+  line-height: 1.7;
+  &__data {
+    &-list {
+      font-weight: 600;
+      & span {
+        color: $font-color-secondary;
+      }
+    }
+  }
+}
