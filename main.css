@@ -132,6 +132,10 @@ table {
   border-spacing: 0;
 }
 
+body {
+  background-color: #ffffff;
+}
+
 html {
   font-family: "Raleway", sans-serif;
   font-size: 62.5%;
@@ -161,6 +165,31 @@ body {
   color: #fff;
 }
 
+.styled-card {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+.styled-card__data-list {
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+.styled-card__data-item span {
+  color: #FFC53D;
+  margin-left: .6rem;
+}
+
+.styled-card__description {
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+.section-styled__title {
+  font-weight: 700;
+  font-size: 3.2rem;
+}
+
 .wrapper-main {
   max-width: 1100px;
   margin: 0 auto;
@@ -168,7 +197,7 @@ body {
 }
 
 .section {
-  padding: 7rem 0;
+  padding: 2rem 0 3rem;
   margin-bottom: 4rem;
 }
 
@@ -208,6 +237,66 @@ body {
   background-size: cover;
 }
 
+.section-styled {
+  position: relative;
+}
+
+.section-styled__title {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.section-styled__card {
+  background-color: #fff;
+  padding: 3rem;
+  width: 85%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 6px 6px 20px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 6px 6px 20px 0px rgba(0, 0, 0, 0.05);
+}
+
+.section-styled:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 70%;
+  height: 100%;
+  z-index: -999999;
+  opacity: 1;
+  background-color: #ececec;
+}
+
+.section-styled:nth-child(even) .section-styled__title {
+  text-align: right;
+}
+
+.section-styled:nth-child(even):before {
+  right: 0;
+}
+
+.styled-card__avatar {
+  height: 10rem;
+  min-width: 10rem;
+  border-radius: 50%;
+  background-image: url("../img/avatar.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.styled-card__data-list {
+  min-width: 280px;
+}
+
+.styled-card > *:not(:last-child) {
+  margin-right: 3rem;
+}
+
 .social-icons__list {
   position: relative;
   z-index: 2;
@@ -228,14 +317,6 @@ body {
 
 .social-icons__item:not(:last-child) {
   margin-right: 4rem;
-}
-
-body {
-  background-color: #ffffff;
-}
-
-.wrapper-main {
-  border: 1px solid red;
 }
 
 .nav-bar {
