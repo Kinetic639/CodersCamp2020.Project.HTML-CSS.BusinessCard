@@ -16,34 +16,32 @@ body {
   font-size: 1.8rem;
 }
 
-.section {
-  &__home {
-    &--title {
-      & h1 {
-        font-size: 10rem;
-        color: $font-color-secondary;
-      }
+.home-title {
+  text-align: center;
+  &__main{
+            font-size: 10rem;
+            color: $font-color-secondary;
 
-      & h2 {
-        font-size: 3.6rem;
-        color: #fff;
-        text-align: center;
-      }
-    }
+  }
+  &__subtitle {
+            font-size: 3.6rem;
+            color: #fff;      
   }
 }
 
 
 
-.section-card {
-  font-size: 1.6rem;
-  line-height: 1.7;
-  &__data {
-    &-list {
-      font-weight: 600;
-      & span {
-        color: $font-color-secondary;
-      }
-    }
-  }
-}
+
+
+// .section-card {
+//   font-size: 1.6rem;
+//   line-height: 1.7;
+//   &__data {
+//     &-list {
+//       font-weight: 600;
+//       & span {
+//         color: $font-color-secondary;
+//       }
+//     }
+//   }
+// }
