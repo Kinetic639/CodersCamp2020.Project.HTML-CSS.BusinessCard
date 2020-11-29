@@ -190,6 +190,13 @@ body {
   font-size: 3.2rem;
 }
 
+.section-portfolio__title {
+  font-size: 3.2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
 .footer {
   font-size: 1.4rem;
 }
@@ -222,16 +229,6 @@ body {
   cursor: pointer;
 }
 
-/*
-<div class="flex-container">
-        <div class="flex-container__item">
-                  <i class="fas fa-brush flex-container__icon"></i>
-                  <h3 class="flex-container__title">UX/UI</h3>
-                  <p class="flex-container__text-area">Figma, Photoshop, Illustrator</p>
-
-        </div>
-</div>
-*/
 .flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -260,6 +257,10 @@ body {
   padding-top: 3rem;
 }
 
+.flex-container__item:not(:nth-child(3)) {
+  border-right: 3px dotted #FFC53D;
+}
+
 .flex-container__title {
   font-size: 2.4rem;
   font-weight: 700;
@@ -276,6 +277,91 @@ body {
   font-size: 2.2rem;
   font-weight: 400;
   text-align: center;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[11];
+      grid-template-columns: repeat(11, 1fr);
+}
+
+.grid-container__item {
+  min-height: 350px;
+  position: relative;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #222222), to(#ff9a3d));
+  background: linear-gradient(180deg, #222222 30%, #ff9a3d 100%);
+  overflow: hidden;
+}
+
+.grid-container__item:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.grid-container__item:hover:before {
+  opacity: .5;
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.project-one {
+  grid-column: span 4;
+}
+
+.project-one:before {
+  background: url("../../img/project-1.jpg");
+}
+
+.project-two {
+  grid-column: span 3;
+}
+
+.project-two:before {
+  background: url("../../img/project-2.jpg");
+}
+
+.project-three {
+  grid-column: span 4;
+}
+
+.project-three:before {
+  background: url("../../img/project-3.jpg");
+}
+
+.project-four {
+  grid-column: span 3;
+}
+
+.project-four:before {
+  background: url("../../img/project-4.jpg");
+}
+
+.project-five {
+  grid-column: span 8;
+}
+
+.project-five:before {
+  background: url("../../img/project-5.jpg");
+}
+
+.grid-container__item:before {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .section__home {
@@ -368,8 +454,8 @@ body {
 }
 
 .styled-card__avatar {
-  height: 10rem;
-  min-width: 10rem;
+  height: 13rem;
+  min-width: 13rem;
   border-radius: 50%;
   background-image: url("../img/avatar.jpg");
   background-repeat: no-repeat;
@@ -378,7 +464,7 @@ body {
 }
 
 .styled-card > *:not(:last-child) {
-  margin-right: 3rem;
+  margin-right: 4rem;
 }
 
 .styled-card__data-list {

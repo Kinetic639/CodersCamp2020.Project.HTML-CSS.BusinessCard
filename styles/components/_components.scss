@@ -1,6 +1,7 @@
 // @import './buttons';
 @import './navBar';
 @import './flexContainer';
+@import './gridContainer';
 @import './sections/home';
 
 //main wrapper for the page
@@ -70,8 +71,8 @@
 //styled card items
 .styled-card {
     &__avatar {
-        height: 10rem;
-        min-width: 10rem;
+        height: 13rem;
+        min-width: 13rem;
         border-radius: 50%;
         background-image: url('../img/avatar.jpg');
         background-repeat: no-repeat;
@@ -80,7 +81,7 @@
     }
 
     &>*:not(:last-child) {
-        margin-right: 3rem;
+        margin-right: 4rem;
     }
 
     &__data-list {
