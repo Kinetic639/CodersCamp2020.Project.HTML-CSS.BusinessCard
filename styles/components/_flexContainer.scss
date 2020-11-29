@@ -1,0 +1,44 @@
+/*
+<div class="flex-container">
+        <div class="flex-container__item">
+                  <i class="fas fa-brush flex-container__icon"></i>
+                  <h3 class="flex-container__title">UX/UI</h3>
+                  <p class="flex-container__text-area">Figma, Photoshop, Illustrator</p>
+
+        </div>
+</div>
+*/
+
+.flex-container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    padding-bottom: 1rem;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+        min-width: 22rem;
+        padding-top: 3rem;
+    }
+
+    &__title {
+        font-size: 2.4rem;
+        font-weight: 700;
+        color: $font-color-secondary;
+        margin-bottom: .6rem;
+    }
+
+    &__icon {
+        font-size: 8.5rem;
+        margin-bottom: 1rem;
+    }
+
+    &__text-area {
+        font-size: 2.2rem;
+        font-weight: 400;
+        text-align: center;
+    }
+}

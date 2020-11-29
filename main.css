@@ -190,15 +190,92 @@ body {
   font-size: 3.2rem;
 }
 
-.wrapper-main {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 2rem;
+.footer {
+  font-size: 1.4rem;
 }
 
-.section {
-  padding: 2rem 0 3rem;
-  margin-bottom: 4rem;
+.nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 3rem 0;
+  margin: 0 auto;
+}
+
+.nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-menu__item:not(:last-child) {
+  margin-right: 3rem;
+}
+
+.nav-menu__item:hover {
+  cursor: pointer;
+}
+
+/*
+<div class="flex-container">
+        <div class="flex-container__item">
+                  <i class="fas fa-brush flex-container__icon"></i>
+                  <h3 class="flex-container__title">UX/UI</h3>
+                  <p class="flex-container__text-area">Figma, Photoshop, Illustrator</p>
+
+        </div>
+</div>
+*/
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 1rem;
+}
+
+.flex-container__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 22rem;
+  padding-top: 3rem;
+}
+
+.flex-container__title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #FFC53D;
+  margin-bottom: .6rem;
+}
+
+.flex-container__icon {
+  font-size: 8.5rem;
+  margin-bottom: 1rem;
+}
+
+.flex-container__text-area {
+  font-size: 2.2rem;
+  font-weight: 400;
+  text-align: center;
 }
 
 .section__home {
@@ -237,6 +314,17 @@ body {
   background-size: cover;
 }
 
+.wrapper-main {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section {
+  padding: 2rem 0 3rem;
+  margin-bottom: 4rem;
+}
+
 .section-styled {
   position: relative;
 }
@@ -272,7 +360,7 @@ body {
 }
 
 .section-styled:nth-child(even) .section-styled__title {
-  text-align: right;
+  width: 30%;
 }
 
 .section-styled:nth-child(even):before {
@@ -289,12 +377,14 @@ body {
   background-size: cover;
 }
 
-.styled-card__data-list {
-  min-width: 280px;
-}
-
 .styled-card > *:not(:last-child) {
   margin-right: 3rem;
+}
+
+.styled-card__data-list {
+  min-width: 320px;
+  padding-right: 2rem;
+  border-right: 3px dotted #FFC53D;
 }
 
 .social-icons__list {
@@ -319,32 +409,8 @@ body {
   margin-right: 4rem;
 }
 
-.nav-bar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 3rem 0;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.nav-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.nav-menu__item:not(:last-child) {
-  margin-right: 3rem;
-}
-
-.nav-menu__item:hover {
-  cursor: pointer;
+.footer {
+  text-align: center;
+  padding: 1.5rem 0;
 }
 /*# sourceMappingURL=main.css.map */
