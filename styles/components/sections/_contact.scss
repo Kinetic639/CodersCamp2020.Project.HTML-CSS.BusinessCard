@@ -1,0 +1,88 @@
+.section__contact {
+    background-color: $color-grey-light;
+
+    & .flex-container {
+        padding: 0 3rem;
+        color: #fff;
+
+        &__item {
+            border: none;
+            // align-items: flex-start;
+            padding: 4rem;
+
+            & .social-icons__list {
+                color: #fff;
+            }
+
+            &:nth-child(1) {
+                background-color: $color-orange-dark;
+            }
+            &:nth-child(2) {
+                position: relative;
+                overflow: hidden;
+                padding: 0;
+                &:before {
+                    content: ' ';
+                    display: block;
+                    position: absolute;
+                    left: -15px;
+                    top: 40px;
+                    width: 30px;
+                    height: 30px;
+                    transform: rotate(-45deg) ;
+                    background-color: $color-orange-dark;
+                }
+            }
+        }
+    }
+}
+
+.contact {
+    &__icon, &__description {
+        
+        margin-bottom: 3.5rem;
+    }
+    &__icon {
+        font-size: 3.2rem;
+    }
+
+    &__description {
+        width: 80%;
+    }
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    min-height: 100%;
+padding: 3rem 0;
+    &__title {
+        width: 80%;
+        margin: 0 auto 1.5rem;
+        color: $font-color-primary;
+        font-size: 2.8rem;
+        font-weight: 700;
+    }
+    &__input {
+        font-family: inherit;
+        line-height: 2;
+        padding: 1rem 2rem;
+        border-radius: 15px;
+        width: 80%;
+        border: none;
+        margin: 0 auto 1.5rem;
+        background-color: #FAFAFF;
+        &:focus {
+            outline: none;
+        -webkit-box-shadow:inset 0 4px 4px rgba(0, 0, 0, .15);
+        -moz-box-shadow:inset 0 4px 4px rgba(0, 0, 0, .15);
+             box-shadow:inset 0 4px 4px rgba(0, 0, 0, .15);
+        }
+    
+    }
+    &__text-area {
+        min-height: 20rem;
+    }
+}
