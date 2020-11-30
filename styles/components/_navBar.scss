@@ -1,0 +1,19 @@
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 0;
+  margin: 0 auto;
+}
+
+.nav-menu {
+  display: flex;
+  &__item {
+    &:not(:last-child) {
+      margin-right: 3rem;
+    }
+    &:hover{
+        cursor: pointer;
+    }
+  }
+}

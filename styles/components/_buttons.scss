@@ -1,0 +1,17 @@
+.btn {
+    color: #fff;
+    background: linear-gradient(270deg, rgba(255,197,61,1) 0%, rgba(255,154,61,1) 100%);
+    border: none;
+    font-size: 1.8rem;
+    line-height: 1.6;
+    padding: 1rem 3rem;
+    width: fit-content;
+    border-radius: 15px;
+    &__submit {
+        
+    align-self: flex-end;
+    margin-right: 7.5%;
+    margin-top: 1rem;
+    }
+}
+

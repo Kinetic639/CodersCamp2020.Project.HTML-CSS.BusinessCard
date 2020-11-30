@@ -13,19 +13,19 @@
 </head>
 
 <body>
-  <div class="wrapper-main">
-    <nav class="nav-bar">
-        <div class="nav-bar__branding">Michał Stępień</div>
-        <ul class="nav-menu">
-            <li class="nav-menu__item">About me</li>
-            <li class="nav-menu__item">Skills</li>
-            <li class="nav-menu__item">Portfolio</li>
-            <li class="nav-menu__item">Contact</li>
-        </ul>
+    <div class="wrapper-main">
+        <nav class="nav-bar">
+            <div class="nav-bar__branding">Michał Stępień</div>
+            <ul class="nav-menu">
+                <li class="nav-menu__item">About me</li>
+                <li class="nav-menu__item">Skills</li>
+                <li class="nav-menu__item">Portfolio</li>
+                <li class="nav-menu__item">Contact</li>
+            </ul>
 
-    </nav>
-     <section class="section section__home">
-            <h1  class="home-title__main"> Michał <span>Stępień</span></h1>
+        </nav>
+        <section class="section section__home">
+            <h1 class="home-title__main"> Michał <span>Stępień</span></h1>
             <h2 class="home-title__subtitle">Front end developer</h2>
             <ul class="social-icons__list">
                 <li class="social-icons__item"><i class="fab fa-twitter-square"></i></li>
@@ -33,39 +33,100 @@
                 <li class="social-icons__item"><i class="fab fa-github-square"></i></li>
                 <li class="social-icons__item"><i class="fab fa-facebook"></i></li>
             </ul>
-    </section>
-    <!-- 
-    <section class="section section__about">
-        <div class="section-card-title">
-            <h3>About me</h3>
-        </div>
-        <div class="section-white-space"></div>
-        <div class="section-card">
-            <div class="section-card__avatar"></div>
-            <div class="section-card__data">
-                <ul class="section-card__data-list">
-                    <li class="section-card__data-item">Full name: <span> Michał Stępień</span></li>
-                    <li class="section-card__data-item">Age: <span>32</span></li>
-                    <li class="section-card__data-item">Profile: <span>Front End Developer</span></li>
-                    <li class="section-card__data-item">Location: <span>Poznań, Poland</span></li>
-                    <li class="section-card__data-item">email: <span>michal.stepien36@gmail.com</span></li>
+        </section>
+
+        <section class="section section__about section-styled">
+            <h2 class="section-styled__title">About me</h2>
+            <div class="section-styled__card styled-card">
+                <div class="styled-card__avatar"></div>
+                <ul class="styled-card__data-list">
+                    <li class="styled-card__data-item">Full name: <span> Michał Stępień</span></li>
+                    <li class="styled-card__data-item">Age: <span>32</span></li>
+                    <li class="styled-card__data-item">Profile: <span>Front End Developer</span></li>
+                    <li class="styled-card__data-item">Location: <span>Poznań, Poland</span></li>
+                    <li class="styled-card__data-item">email: <span>michal.stepien36@gmail.com</span></li>
                 </ul>
+                <div class="styled-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ex ea commodo
+                    consequat.
+                </div>
+
             </div>
-            <div class="section-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ex ea commodo consequat.
+        </section>
+        <section class="section section__about section-styled">
+            <h2 class="section-styled__title">Skills</h2>
+            <div class="section-styled__card styled-card">
+                <div class="flex-container">
+
+                    <div class="flex-container__item">
+                        <i class="fas fa-brush flex-container__icon"></i>
+                        <h3 class="flex-container__title">UX/UI</h3>
+                        <p class="flex-container__text-area">Figma, Photoshop, Illustrator</p>
+                    </div>
+
+                    <div class="flex-container__item">
+                        <i class="fas fa-desktop flex-container__icon"></i>
+                        <h3 class="flex-container__title">Front End</h3>
+                        <p class="flex-container__text-area">Html, CSS, JavaScript</p>
+                    </div>
+
+                    <div class="flex-container__item">
+                        <i class="fas fa-server flex-container__icon"></i>
+                        <h3 class="flex-container__title">Back End</h3>
+                        <p class="flex-container__text-area">PHP, Node.js</p>
+                    </div>
+
+                </div>
             </div>
+        </section>
 
-        </div>
+        <section class="section section__portfolio">
+            <h2 class="section-portfolio__title">Portfolio</h2>
+            <div class="grid-container">
+                <div class="grid-container__item project-one"></div>
+                <div class="grid-container__item project-two"></div>
+                <div class="grid-container__item project-three"></div>
+                <div class="grid-container__item project-four"></div>
+                <div class="grid-container__item project-five"></div>
+            </div>
+        </section>
+        <section class="section section__contact">
+            <h2 class="section-styled__title">Contact me</h2>
 
-    </section>
-   
+            <div class="flex-container">
 
-    </section>
-    <section class="section section__portfolio">portfolio</section>
-    <section class="section section__contact">contact</section> -->
-  </div>
+                <div class="flex-container__item">
+                    <i class="fas fa-paper-plane contact__icon"></i>
+                    <p class="contact__description">Please describe your question.
+                        Send me a message and I will answer you as soon as possible!</p>
+
+                    <ul class="social-icons__list">
+                        <li class="social-icons__item"><i class="fab fa-twitter-square"></i></li>
+                        <li class="social-icons__item"><i class="fab fa-linkedin"></i></i></li>
+                        <li class="social-icons__item"><i class="fab fa-github-square"></i></li>
+                        <li class="social-icons__item"><i class="fab fa-facebook"></i></li>
+                    </ul>
+                </div>
+                <div class="flex-container__item">
+                    <form action="submit" class="contact-form">
+                        <h2 class="contact-form__title">Ask me anything!</h2>
+                        <input class="contact-form__input" type="text" placeholder="Name">
+                        <input class="contact-form__input" type="email" placeholder='email'>
+                        <input class="contact-form__input" type="text" placeholder="Topic">
+                        <textarea class=" contact-form__input contact-form__text-area" type="text" placeholder="Message"></textarea>
+                        <button class=" btn btn__submit" type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+        <footer class="footer">
+            <p>Copyrights &copy Michał Stępień 2020</p>
+        </footer>
+    </div>
 </body>
 
 </html>

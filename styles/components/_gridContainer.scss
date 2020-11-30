@@ -1,0 +1,94 @@
+.grid-container {
+    display: grid;
+
+    grid-template-columns: repeat(11, 1fr);
+
+    &__item {
+        min-height: 350px;
+        position: relative;
+        background: linear-gradient(180deg, #222222 30%, rgba(255, 154, 61, 1) 100%);
+        overflow: hidden;
+
+        &:before {
+            content: ' ';
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+
+        }
+
+        &:hover {
+
+            &:before {
+                opacity: .5;
+                filter: blur(2px);
+                transform: scale(1.1);
+                transition: all .3s ease-in-out;
+            }
+        }
+    }
+}
+
+.project-one {
+    &:before {
+        background: url('../../img/project-1.jpg');
+    }
+
+    grid-column: span 4;
+}
+
+.project-two {
+    &:before {
+        background: url('../../img/project-2.jpg');
+    }
+
+    grid-column: span 3;
+
+
+}
+
+.project-three {
+    &:before {
+        background: url('../../img/project-3.jpg');
+    }
+
+    grid-column: span 4;
+
+
+}
+
+.project-four {
+    &:before {
+        background: url('../../img/project-4.jpg');
+    }
+
+    grid-column: span 3;
+
+}
+
+.project-five {
+    &:before {
+        background: url('../../img/project-5.jpg');
+    }
+
+    grid-column: span 8;
+
+}
+
+.grid-container {
+
+    &__item:before {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
