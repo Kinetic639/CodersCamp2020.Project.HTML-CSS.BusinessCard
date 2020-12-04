@@ -4,9 +4,9 @@
     grid-template-columns: repeat(11, 1fr);
 
     &__item {
-        min-height: 350px;
+        min-height: 35rem;
         position: relative;
-        background: linear-gradient(180deg, #222222 30%, rgba(255, 154, 61, 1) 100%);
+        background: linear-gradient(135deg, #000000 0%,#785593 50%,#ffb94e 75%,#ff9a3d 100%);
         overflow: hidden;
 
         &:before {

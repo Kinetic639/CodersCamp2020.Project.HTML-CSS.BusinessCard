@@ -1,0 +1,35 @@
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    background-color: $color-primary;
+    width: 100%;
+    min-height: 100%;
+padding: 3rem 0;
+    &__title {
+        width: 80%;
+        margin: 0 auto 1.5rem;
+        color: $font-color-primary;
+        font-size: 2.8rem;
+        font-weight: 700;
+    }
+    &__input {
+        font-family: inherit;
+        line-height: 2;
+        padding: 1rem 2rem;
+        border-radius: 1.5rem;
+        width: 80%;
+        border: none;
+        margin: 0 auto 1.5rem;
+        background-color: #FAFAFF;
+        &:focus {
+            outline: none;
+        -webkit-box-shadow:inset 0 4px 4px rgba(0, 0, 0, .15);
+        -moz-box-shadow:inset 0 4px 4px rgba(0, 0, 0, .15);
+             box-shadow:inset 0 4px 4px rgba(0, 0, 0, .15);
+        }
+    
+    }
+    &__text-area {
+        min-height: 20rem;
+    }
+}
