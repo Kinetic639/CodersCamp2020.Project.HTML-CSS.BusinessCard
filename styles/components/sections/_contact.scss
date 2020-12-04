@@ -1,0 +1,53 @@
+.section__contact {
+    background-color: $color-grey-light;
+
+    & .flex-container {
+        padding: 0 4rem;
+        color: $color-primary;
+
+        &__item {
+            border: none;
+            // align-items: flex-start;
+            padding: 4rem;
+
+            & .social-icons__list {
+                color: $color-primary;
+            }
+
+            &:nth-child(1) {
+                background-color: $color-orange-dark;
+            }
+            &:nth-child(2) {
+                position: relative;
+                overflow: hidden;
+                padding: 0;
+                &:before {
+                    content: ' ';
+                    display: block;
+                    position: absolute;
+                    left: -1.5rem;
+                    top: 4rem;
+                    width: 3rem;
+                    height: 3rem;
+                    transform: rotate(-45deg) ;
+                    background-color: $color-orange-dark;
+                }
+            }
+        }
+    }
+}
+
+.contact {
+    &__icon, &__description {
+        
+        margin-bottom: 3.5rem;
+    }
+    &__icon {
+        font-size: 3.2rem;
+    }
+
+    &__description {
+        width: 80%;
+    }
+}
+
