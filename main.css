@@ -592,10 +592,10 @@ body {
 }
 
 .styled-card__avatar {
-  height: 13rem;
+  height: auto;
   min-width: 13rem;
   border-radius: 50%;
-  background-image: url("../img/avatar.jpg");
+  background-image: url("./img/avatar.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
