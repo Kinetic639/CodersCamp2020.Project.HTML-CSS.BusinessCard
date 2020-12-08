@@ -1,6 +1,6 @@
 .section {
     &__home {
-        min-height: 50vh;
+        min-height: 70vh;
         position: relative;
         background: $font-color-primary;
         overflow: hidden;
@@ -8,6 +8,7 @@
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
+        // padding: 3rem 0;
 
         &:before {
             content: ' ';

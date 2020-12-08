@@ -1,0 +1,17 @@
+.styled-card {
+    &__about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & .avatar {
+            margin-bottom: 3rem;
+        }
+    }
+    &__data-list {
+        width: 100%;
+        margin-bottom: 3rem;
+        border-bottom: 3px dotted $font-color-secondary;
+        padding-bottom: 3rem;
+    }
+}

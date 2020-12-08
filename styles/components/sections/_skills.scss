@@ -1,0 +1,38 @@
+.flex-container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+        min-width: 22rem;
+        &:not(:nth-child(3)) {
+        padding-bottom: 3rem;
+        border-bottom: 3px dotted $font-color-secondary;
+        }
+        &:not(:nth-child(1)) {
+            padding-top: 3rem;
+            }
+    }
+
+    &__title {
+        font-size: 2.2rem;
+        font-weight: 700;
+        color: $font-color-secondary;
+        margin-bottom: .6rem;
+    }
+
+    &__icon {
+        font-size: 5.5rem;
+        margin-bottom: 1rem;
+    }
+
+    &__text-area {
+        font-size: 1.8rem;
+        font-weight: 400;
+        text-align: center;
+    }
+}

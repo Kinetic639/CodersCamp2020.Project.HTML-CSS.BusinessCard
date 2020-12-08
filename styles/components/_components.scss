@@ -1,26 +1,29 @@
 // @import './buttons';
 @import './navBar';
-@import './flexContainer';
-@import './gridContainer';
+@import './menuToggleButton';
+@import './socialIcons';
+@import './avatar';
+// @import './flexContainer';
+// @import './gridContainer';
 @import './buttons';
 @import './contactForm';
-@import './socialIcons';
 @import './sections/home';
+@import './sections/about';
+@import './sections/skills';
 @import './sections/contact';
 
 //main wrapper for the page
 .wrapper-main {
     max-width: 136rem;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 ;
+    z-index: 1;
 }
 
-
+//styled sections
 .section {
-    padding: 2rem 0 3rem;
-    margin-bottom: 4rem;
-
-    //styled sections - about / skills
+    padding: 2rem 0;
+    margin-bottom: 2rem;
 
     &-styled {
 
@@ -36,9 +39,8 @@
         &__card {
             background-color: $color-primary;
             padding: 3rem;
-            width: 85%;
-            margin: 0 auto;
-            display: flex;
+            width: 100%;
+            margin: 0 auto;            
             -webkit-box-shadow: 6px 6px 20px 0px rgba(0, 0, 0, 0.05);
             box-shadow: 6px 6px 20px 0px rgba(0, 0, 0, 0.05);
 
@@ -72,35 +74,10 @@
     }
 }
 
-//styled card items
-.styled-card {
-    &__avatar {
-        height: auto;
-        min-width: 13rem;
-        border-radius: 50%;
-        background-image: url('./img/avatar.jpg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-
-    &>*:not(:last-child) {
-        margin-right: 4rem;
-    }
-
-    &__data-list {
-        min-width: 32rem;
-        padding-right: 2rem;
-        border-right: 3px dotted $font-color-secondary;
-    }
-
-}
 
 
-
-
-//footer
-.footer {
-    text-align: center;
-    padding: 1.5rem 0;
-}
+// //footer
+// .footer {
+//     text-align: center;
+//     padding: 1.5rem 0;
+// }
