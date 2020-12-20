@@ -1,0 +1,76 @@
+.menuToggle {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 3;
+  background-color: $color-grey-light;
+  border-radius: 50%;
+  width: 4.5rem;
+  height: 4.5rem;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+}
+
+.checkbox__nav {
+  display: flex;
+  width: 4rem;
+  height: 3.2rem;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 4;
+}
+
+.menuToggle span {
+  display: flex;
+  width: 2.6rem;
+  height: 2px;
+  margin-bottom: 5px;
+  position: relative;
+  background: $font-color-secondary;
+  transform-origin: 5px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+.menuToggle span:first-child {
+  transform-origin: 0% 0%;
+  margin-top: 3px;
+}
+
+.menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+  width: 2rem;
+  transform: translateX(-3px);
+}
+
+.checkbox__nav:checked~.menuToggle {
+  background-color: $font-color-secondary;
+}
+
+.checkbox__nav:checked~.menuToggle span {
+  opacity: 1;
+  transform: rotate(45deg) translate(2px, -2px);
+  background: #fff;
+}
+
+.checkbox__nav:checked~.menuToggle span:nth-child(2) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+.checkbox__nav:checked~.menuToggle span:nth-child(3) {
+  transform: rotate(-45deg) translate(1px, 1px);
+}
+
+.checkbox__nav:checked~.nav-menu,
+.checkbox__nav:checked~ .branding .avatar,
+.checkbox__nav:checked~.nav-menu .nav-menu__item,
+.checkbox__nav:checked~.branding {
+  transform: none;
+}

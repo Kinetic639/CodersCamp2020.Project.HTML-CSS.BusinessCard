@@ -1,8 +1,8 @@
-// @import './buttons';
-@import './navBar';
-@import './menuToggleButton';
-@import './socialIcons';
+@import './buttons';
 @import './avatar';
+@import './menuToggle';
+@import './navigation';
+@import './socialIcons';
 // @import './flexContainer';
 // @import './gridContainer';
 @import './buttons';
@@ -12,19 +12,23 @@
 @import './sections/skills';
 @import './sections/portfolio';
 @import './sections/contact';
+@import './footer';
 
 //main wrapper for the page
 .wrapper-main {
     max-width: 136rem;
     margin: 0 auto;
-    padding: 0 ;
+    padding: 0;
     z-index: 1;
 }
 
 //styled sections
 .section {
     padding: 2rem 0;
-    margin-bottom: 2rem;
+
+    &:not(:last-of-type) {
+        margin-bottom: 2rem;
+    }
 
     &-styled {
 
@@ -41,7 +45,7 @@
             background-color: $color-primary;
             padding: 3rem;
             width: 100%;
-            margin: 0 auto;            
+            margin: 0 auto;
             -webkit-box-shadow: 6px 6px 20px 0px rgba(0, 0, 0, 0.05);
             box-shadow: 6px 6px 20px 0px rgba(0, 0, 0, 0.05);
 
