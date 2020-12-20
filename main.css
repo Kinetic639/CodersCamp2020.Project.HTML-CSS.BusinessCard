@@ -870,8 +870,7 @@ body {
   margin: 0 auto;
 }
 
-/* Common style */
-.grid figure {
+.grid .project-card {
   margin: 0;
   position: relative;
   float: left;
@@ -883,6 +882,14 @@ body {
   cursor: pointer;
 }
 
+.grid .project-card figcaption {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  /* -webkit-backface-visibility: hidden;
+			backface-visibility: hidden; */
+}
+
 .grid img {
   /* min-width: 100%; */
   min-height: 100%;
@@ -891,19 +898,11 @@ body {
   vertical-align: bottom;
 }
 
-.grid figure figcaption {
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 1.1em;
-  /* -webkit-backface-visibility: hidden;
-	backface-visibility: hidden; */
-}
-
-.grid figure figcaption::before {
+.grid .project-card figcaption::before {
   pointer-events: none;
 }
 
-.grid figure figcaption {
+.grid .project-card figcaption {
   position: absolute;
   top: 0;
   left: 0;
@@ -911,22 +910,22 @@ body {
   height: 100%;
 }
 
-.grid figure h2 {
+.grid .project-card h2 {
   word-spacing: -0.15em;
   font-weight: 300;
 }
 
-.grid figure h2 span {
+.grid .project-card h2 span {
   font-weight: 800;
   margin-left: .6rem;
 }
 
-.grid figure h2,
-.grid figure p {
+.grid .project-card h2,
+.project-card__description-line {
   margin: 0;
 }
 
-.grid figure p {
+.project-card__description-line {
   letter-spacing: 1px;
   font-size: 68.5%;
 }
