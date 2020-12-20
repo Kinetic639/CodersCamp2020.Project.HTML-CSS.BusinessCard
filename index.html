@@ -2,7 +2,6 @@
 <html lang="pl">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Michał Stępień - portfolio</title>
@@ -14,23 +13,43 @@
 
 <body>
     <div class="wrapper-main">
-        <nav class="nav-bar">
+        <!-- <nav class="nav-bar" role="navigation">
             <div class="nav-bar__branding">Michał Stępień</div>
-            <ul class="nav-menu">
-                <li class="nav-menu__item">About me</li>
-                <li class="nav-menu__item">Skills</li>
-                <li class="nav-menu__item">Portfolio</li>
-                <li class="nav-menu__item">Contact</li>
-            </ul>
+            <div id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul class="nav-menu">
+                    <li class="nav-menu__item">About me</li>
+                    <li class="nav-menu__item">Skills</li>
+                    <li class="nav-menu__item">Portfolio</li>
+                    <li class="nav-menu__item">Contact</li>
+                </ul>
+
+
+            </div>
+        </nav> -->
+        <nav class="nav-bar">
+            <input class="checkbox__nav" type="checkbox" />
             <div class="menuToggle">
                 <span></span>
                 <span></span>
                 <span></span>
-                
-              
+
             </div>
+            <div class="branding">
+                <div class=" avatar "></div>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-menu__item"><a href="#home">Home</a></li>
+                <li class="nav-menu__item"><a href="#about">About</a></li>
+                <li class="nav-menu__item"><a href="#skills">Skills</a></li>
+                <li class="nav-menu__item"><a href="#portfolio">Portfolio</a></li>
+                <li class="nav-menu__item"><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
-        <header class="section section__home">
+        <header id="home" class="section section__home">
             <h1 class="home-title__main"> Michał <span>Stępień</span></h1>
             <h2 class="home-title__subtitle">Front end developer</h2>
             <ul class="social-icons__list">
@@ -41,7 +60,7 @@
             </ul>
         </header>
 
-        <section class="section section__about section-styled">
+        <section id="about" class="section section__about section-styled">
             <h2 class="section-styled__title">About me</h2>
             <div class="section-styled__card styled-card__about">
                 <div class="avatar"></div>
@@ -61,7 +80,7 @@
 
             </div>
         </section>
-        <section class="section section__about section-styled">
+        <section id="skills" class="section section__about section-styled">
             <h2 class="section-styled__title">Skills</h2>
             <div class="section-styled__card styled-card">
                 <div class="flex-container">
@@ -88,7 +107,7 @@
             </div>
         </section>
 
-        <section class="section section__portfolio">
+        <section id="portfolio" class="section section__portfolio">
             <h2 class="section-portfolio__title">Portfolio</h2>
             <div class="grid">
                 <figure class="project-card ">
@@ -168,7 +187,7 @@
                 </figure>
             </div>
         </section>
-        <section class="section section__contact">
+        <section id="contact" class="section section__contact">
             <h2 class="section-styled__title">Contact me</h2>
 
             <div class="flex-container">
@@ -191,7 +210,8 @@
                         <input class="contact-form__input" type="text" placeholder="Name">
                         <input class="contact-form__input" type="email" placeholder='email'>
                         <input class="contact-form__input" type="text" placeholder="Topic">
-                        <textarea class=" contact-form__input contact-form__text-area" type="text" placeholder="Message"></textarea>
+                        <textarea class=" contact-form__input contact-form__text-area" type="text"
+                            placeholder="Message"></textarea>
                         <button class=" btn btn__submit" type="submit">Send</button>
                     </form>
                 </div>
@@ -199,9 +219,9 @@
         </section>
 
 
-        <!-- <footer class="footer">
+        <footer class="footer">
             <p>Copyrights &copy Michał Stępień 2020</p>
-        </footer> -->
+        </footer>
     </div>
 </body>
 
