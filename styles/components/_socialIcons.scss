@@ -13,12 +13,22 @@
 
 
     &__item {
+        transition: all 0.2s cubic-bezier(0.77, 0.2, 0.05, 1.0);
         &:hover {
             cursor: pointer;
+            color: $color-primary;
+            transform: scale(1.2);
+            transform-origin: center;
+            transition: all 0.2s cubic-bezier(0.77, 0.2, 0.05, 1.0);
         }
 
         &:not(:last-child) {
             margin-right: 4rem;
         }
     }
+}
+
+.section__contact .social-icons__item:hover {
+color: $font-color-primary;
+transition: all 0.2s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 }

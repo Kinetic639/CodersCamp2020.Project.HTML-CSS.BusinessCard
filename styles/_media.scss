@@ -1,0 +1,321 @@
+@media (min-width: $screen-size-s) {
+    .home-title {
+        &__main {
+            font-size: 6.6rem;
+            color: $font-color-secondary;
+        }
+
+        &__subtitle {
+            font-size: 3rem;
+            color: $color-primary;
+        }
+    }
+
+    .social-icons {
+
+        &__list {
+
+            font-size: 3.3rem;
+        }
+
+        &__item {
+            &:hover {
+                cursor: pointer;
+            }
+
+            &:not(:last-child) {
+                margin-right: 4rem;
+            }
+        }
+    }
+
+    .flex-container {
+
+        &__item {
+            padding-top: 3rem;
+
+            &:not(:nth-child(3)) {
+                padding-bottom: 3rem;
+                border-bottom: none;
+            }
+
+            &:nth-child(1) {
+                padding-right: 3rem;
+                border-right: 3px dotted $font-color-secondary;
+            }
+
+            &:nth-child(2) {
+                padding-left: 3rem;
+            }
+        }
+
+    }
+
+    .section__contact {
+        & .flex-container {
+            &__item {
+                border: none;
+            }
+        }
+    }
+
+    .contact {
+
+        &__description {
+            text-align: center;
+        }
+    }
+
+    .section__contact {
+        & .flex-container {
+            max-width: 55rem;
+            margin: 0 auto;
+        }
+    }
+}
+
+
+@media (min-width: $screen-size-m) {
+    .home-title {
+        &__main {
+            font-size: 8.6rem;
+            color: $font-color-secondary;
+
+        }
+
+        &__subtitle {
+            font-size: 4rem;
+            color: $color-primary;
+        }
+    }
+
+    .social-icons {
+
+        &__list {
+
+            font-size: 4rem;
+        }
+
+
+        &__item {
+            &:hover {
+                cursor: pointer;
+            }
+
+            &:not(:last-child) {
+                margin-right: 4rem;
+            }
+        }
+    }
+
+    .flex-container {
+
+
+        &__item {
+            padding: 3rem 0;
+
+            &:nth-child(2) {
+                padding: 3rem;
+            }
+
+            &:nth-child(3) {
+                padding-left: 3rem;
+            }
+
+            &:not(:nth-child(3)) {
+                border-right: 3px dotted $font-color-secondary;
+            }
+        }
+
+    }
+
+    .section {
+
+        &-portfolio__title {
+            margin: 0 auto 1rem;
+        }
+    }
+
+    .section__contact {
+
+        & .flex-container {
+
+            &__item {
+                border: none;
+            }
+        }
+    }
+
+    .styled-card {
+        &__about {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+
+            & .avatar {
+                margin: 4rem;
+                float: 1;
+            }
+        }
+
+        &__data-list {
+            width: 60%;
+            margin: 3rem 0;
+            border-bottom: none;
+            border-left: 3px dotted $font-color-secondary;
+            padding: 0 0 0 4rem;
+        }
+    }
+}
+
+@media (min-width: $screen-size-m) {
+    .section__contact {
+        & .flex-container {
+            flex-direction: row;
+            max-width: 800px;
+            margin: 0 auto;
+
+            &__item {
+                & .social-icons__list {
+                    font-size: 2.6rem;
+                }
+
+                &:nth-child(1) {
+                    max-width: 30rem;
+                    justify-content: space-evenly;
+
+                }
+
+                &:nth-child(2) {
+                    &:before {
+                        left: -2rem;
+                        top: 2.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .grid {
+        grid-template-columns: repeat(10, 1fr);
+        max-width: 900px;
+
+        & .project-card {
+            margin: 0;
+
+            max-width: 650px
+        }
+
+        & .project-card:nth-child(1),
+        & .project-card:nth-child(4) {
+            grid-column: span 6;
+        }
+
+        & .project-card:nth-child(2),
+        & .project-card:nth-child(3) {
+            grid-column: span 4;
+        }
+
+        & .project-card:nth-child(5) {
+            grid-column: 3/9;
+        }
+    }
+
+
+
+
+
+}
+
+
+@media (min-width: $screen-size-l) {
+    .home-title {
+        &__main {
+            font-size: 10rem;
+        }
+    }
+
+    .section {
+        &-styled {
+            & .section-styled__card {
+                width: 90vw;
+                max-width: 1250px;
+            }
+        }
+    }
+    
+}
+
+@media (min-width: $screen-size-xl) {
+
+
+    .grid {
+        grid-template-columns: repeat(11, 1fr);
+        max-width: none;
+
+        & .project-card {
+            margin: 0;
+
+            max-width: 850px
+        }
+
+        & .project-card:nth-child(1) {
+            grid-column: span 4;
+        }
+
+        & .project-card:nth-child(2) {
+            grid-column: span 3;
+        }
+
+        & .project-card:nth-child(3) {
+            grid-column: span 4;
+        }
+
+        & .project-card:nth-child(4) {
+            grid-column: span 6;
+        }
+
+        & .project-card:nth-child(5) {
+            grid-column: span 5;
+        }
+    }
+
+    .section__contact {
+        & .flex-container {
+            flex-direction: row;
+            max-width: 950px;
+            margin: 0 auto;
+        }
+    }
+
+    .styled-card {
+        &__about {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+
+            & .avatar {
+                margin: 4rem;
+                float: 1;
+            }
+        }
+
+        &__data-list {
+            width: 35%;
+            margin: 3rem 0;
+            border-bottom: none;
+            border-left: 3px dotted $font-color-secondary;
+            padding: 0 4rem;
+        }
+
+        &__description {
+            width: 40%;
+            margin: 3rem 0;
+            border-bottom: none;
+            border-left: 3px dotted $font-color-secondary;
+            padding: 0 0 0 4rem;
+        }
+    }
+}
