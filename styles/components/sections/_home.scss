@@ -8,7 +8,7 @@
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        // padding: 3rem 0;
+        margin-bottom: 2rem;
 
         &:before {
             content: ' ';
@@ -27,3 +27,11 @@
         }
     }
 }
+
+.home-title {
+  
+    &__main {
+  margin: 0;
+    }
+  
+  }
