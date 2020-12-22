@@ -167,9 +167,7 @@
             padding: 0 0 0 4rem;
         }
     }
-}
 
-@media (min-width: $screen-size-m) {
     .section__contact {
         & .flex-container {
             flex-direction: row;
@@ -244,7 +242,98 @@
             }
         }
     }
-    
+
+    .nav-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        max-height: 6.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1360px;
+        margin: 0 auto;
+    }
+
+    .nav-menu,
+    .nav-menu__item,
+    .branding {
+        transform: none;
+    }
+
+    .wrapper-main {
+        margin-top: 6.5rem;
+        max-height: calc(100vh - 6.5rem);
+        overflow-y: scroll;
+
+        scroll-behavior: smooth;
+
+    }
+
+    .nav-menu {
+        flex-direction: row;
+        height: 100%;
+        width: fit-content;
+
+        &__item {
+            max-width: fit-content;
+            min-width: 120px;
+            background-color: #fff;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: 25%;
+                left: 15%;
+                width: 70%;
+                height: 0;
+                z-index: 1;
+                opacity: 0;
+                transition: all 0.3s;
+                border-bottom-width: 2px;
+                border-bottom-style: dotted;
+                border-bottom-color: $font-color-secondary;
+                transform: scale(.1, 1);
+            }
+
+            & a {
+                transition: all 0.3s;
+            }
+
+            &:hover a {
+                letter-spacing: 2px;
+            }
+
+            &:hover::before {
+                opacity: 1;
+                transform: scale(1, 1);
+            }
+
+        }
+
+
+    }
+
+    .menuToggle,
+    .checkbox__nav {
+        display: none;
+        visibility: hidden;
+    }
+
+    .branding {
+        width: 100px;
+        min-height: 4rem;
+        background-color: #fff;
+
+        & .avatar {
+            display: none;
+            visibility: hidden;
+        }
+    }
+
+
+
 }
 
 @media (min-width: $screen-size-xl) {
