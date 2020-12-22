@@ -1,14 +1,16 @@
 .section__contact {
-    background-color: $color-grey-light;
+    // background-color: $color-grey-light;
 
     & .flex-container {
         padding: 0;
         color: $color-primary;
-
+flex-direction: column;
+-webkit-box-shadow: 6px 6px 20px 0px rgba(0, 0, 0, 0.05);
+box-shadow: 6px 6px 20px 0px rgba(0, 0, 0, 0.05);
         &__item {
             border: none;
             // align-items: flex-start;
-            padding: 2rem;
+            padding: 3rem 2rem;
 
             & .social-icons__list {
                 color: $color-primary;
