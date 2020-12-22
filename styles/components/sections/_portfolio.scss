@@ -11,6 +11,7 @@
 		background: rgb(0, 0, 0);
 		background: linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(6,6,6,1) 11%, rgba(255,166,84,0.7175245098039216) 43%, rgba(255,166,84,1) 75%, rgba(255,166,84,1) 100%);
 		min-height: 30vh;
+		max-height: 32rem;
 		cursor: pointer;
 		& figcaption {
 			color: #fff;
