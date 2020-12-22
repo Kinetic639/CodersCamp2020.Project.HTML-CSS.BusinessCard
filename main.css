@@ -429,7 +429,7 @@ body {
   width: 150px;
   max-width: 150px;
   border-radius: 50%;
-  background-image: url("../../img/avatar.jpg");
+  background-image: url("./img/avatar.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
